@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>shaikhs website</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+  <div class="wrapper">
+  	<div class="left-col">
+  		<img src="2.5.jpg" class="logo">
+
+  		<div class="content">
+  			<h1>Add plants to your living space.</h1>
+  			<p>plants are very helpful in many ways, like giving oxygen, woods for fuel and furniture, and fruits.</p>
+  			<button type="button">LEARN MORE</button>
+
+  		</div>
+  	</div>
+   <div class="right-col">
+  		<div class="slider">
+  			<img src="2.1.jpg" id="slide">
+  		</div>
+  		  <div class="slider-content">
+  		  	<h2>Where can i find ideas for a small rooms?</h2>
+  		  	<hr>
+  		  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do eiusmod
+  		  	tempor incididunt<br> ut labore et dolore.</p>
+  		  	<div class="controller">
+  		  		<img src="a2.jpg" id="backbtn">
+  		  		<div class="vertical-line">
+  		  			
+  		  		</div>
+  		  		<img src="a3.jpg" id="nextbtn">
+  		  	</div>
+  		  </div>
+  	</div>
+  </div>
+  <script>
+  	var slide = document.getElementById("slide");
+  	var backbtn = document.getElementById("backbtn");
+  	var nextbtn = document.getElementById("nextbtn");
+  	var slideimages = new Array(
+           "2.2.jpg",
+           "2.3.jpeg",
+           "2.4.jpg",
+           "2.2.jpg"
+  		);
+  	let i = 0;
+  	nextbtn.onclick = function(){
+  		if(i < 3){
+  		  slide.src = slideimages[i+1];
+  		  i++;
+  		 }
+  	}
+
+  </script>
+</body>
+</html>
